@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>shopping website</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Shopping</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shopdetail.html">Shop Detail</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="shopping.html"
+                    >Shopping Cart</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="checkout.html">Checkout</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="whyus.html">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="right-side">
+            <ul class="icons d-flex text-white px-3 my-auto">
+              <li><i class="fa-solid fa-user"></i></li>
+              <li><i class="fa-solid fa-cart-shopping"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide carousel-fade py-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active my-auto">
+          <img src="images/sec1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5 style="color: black; font-weight: bold; font-size: 25px">
+              BEST OFFER
+            </h5>
+            <p style="font-size: 2rem">NEW ARRIVALS ON SALE.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/sec2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5 style="color: black; font-weight: bold; font-size: 25px">
+              FLASH DEALS
+            </h5>
+            <p style="font-size: 2rem">GET YOUR BEST PRODUCTS.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/sec3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5 style="color: black; font-weight: bold; font-size: 25px">
+              LAST MINUTE
+            </h5>
+            <p style="font-size: 2rem">GRAB LAST MINUTE DEALS.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="section mt-5 mx-5">
+      <div class="row mx-2">
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <div class="d-flex justify-content-between my-auto py-3 px-2">
+              <p style="float: left">
+                <i
+                  class="fa-solid fa-check fa-fade fa-sm"
+                  style="color: #0057e7; font-size: 30px"
+                ></i>
+              </p>
+              <p style="float: right">Quality Product</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <div class="d-flex justify-content-between my-auto py-3 px-2">
+              <p style="float: left">
+                <i
+                  class="fa-solid fa-truck-fast fa-fade"
+                  style="color: #0057e7; font-size: 30px"
+                ></i>
+              </p>
+              <p style="float: right">Free Shipping</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <div class="d-flex justify-content-between my-auto py-3 px-2">
+              <p style="float: left">
+                <i
+                  class="fa-solid fa-right-left fa-fade"
+                  style="color: #0057e7; font-size: 30px"
+                ></i>
+              </p>
+              <p style="float: right">14-Day Return</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <div class="d-flex justify-content-between my-auto py-3 px-2">
+              <p style="float: left">
+                <i
+                  class="fa-solid fa-phone-volume fa-fade"
+                  style="color: #0057e7; font-size: 30px"
+                ></i>
+              </p>
+              <p style="float: right">24/7 Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section mt-5 mx-2">
+      <h1 class="text-center">CATEGORIES</h1>
+      <hr class="w-50 mx-auto" />
+
+      <div class="row mx-2">
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/clothing.png" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/laptop..jpg" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/cream..png" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/shoes.jpeg" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/laptop..jpg" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/shoes.jpeg" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/clothing.png" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/cream..png" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/shoes.jpeg" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/laptop..jpg" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/cream..png" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 my-auto">
+                <img src="images/clothing.png" alt="" class="w-100" />
+              </div>
+              <div class="col-md-6 my-auto">
+                <div class="category py-2">
+                  <h1 style="font-size: 15px">Category Name</h1>
+                  <p>100 Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section mt-5">
+      <span>
+        <h1 class="text-center">FEATURED PRODUCTS</h1>
+      </span>
+      <span>
+        <hr class="w-50 mx-auto" />
+      </span>
+      <div class="row mx-2">
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <img src="images/camera.png" class="card-img-top w-100" alt="..." />
+            <div class="card-body mx-auto px-2">
+              <h6 class="card-title text-center">Product Name Goes Here</h6>
+              <div class="pricing text-center">
+                <h5 class="card-text">$123.00</h5>
+                &nbsp;
+                <h5 class="card-text margin">$123.00</h5>
+              </div>
+              <ol class="rating-list text-center">
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>(99)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <img
+              src="images/decoration.png"
+              class="card-img-top w-100"
+              alt="..."
+            />
+            <div class="card-body mx-auto px-2">
+              <h6 class="card-title text-center">Product Name Goes Here</h6>
+              <div class="pricing text-center">
+                <h5 class="card-text">$123.00</h5>
+                &nbsp;
+                <h5 class="card-text margin">$123.00</h5>
+              </div>
+              <ol class="rating-list text-center">
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>(99)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <img src="images/shirt.jpeg" class="card-img-top w-100" alt="..." />
+            <div class="card-body mx-auto px-2">
+              <h6 class="card-title text-center">Product Name Goes Here</h6>
+              <div class="pricing text-center">
+                <h5 class="card-text">$123.00</h5>
+                &nbsp;
+                <h5 class="card-text margin">$123.00</h5>
+              </div>
+              <ol class="rating-list text-center">
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>(99)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <img src="images/shoess.png" class="card-img-top w-100" alt="..." />
+            <div class="card-body mx-auto px-2">
+              <h6 class="card-title text-center">Product Name Goes Here</h6>
+              <div class="pricing text-center">
+                <h5 class="card-text">$123.00</h5>
+                &nbsp;
+                <h5 class="card-text margin">$123.00</h5>
+              </div>
+              <ol class="rating-list text-center">
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>(99)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <img src="images/watch.jpeg" class="card-img-top w-100" alt="..." />
+            <div class="card-body mx-auto px-2">
+              <h6 class="card-title text-center">Product Name Goes Here</h6>
+              <div class="pricing text-center">
+                <h5 class="card-text">$123.00</h5>
+                &nbsp;
+                <h5 class="card-text margin">$123.00</h5>
+              </div>
+              <ol class="rating-list text-center">
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>(99)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <img src="images/drone.jpeg" class="card-img-top w-100" alt="..." />
+            <div class="card-body mx-auto px-2">
+              <h6 class="card-title text-center">Product Name Goes Here</h6>
+              <div class="pricing text-center">
+                <h5 class="card-text">$123.00</h5>
+                &nbsp;
+                <h5 class="card-text margin">$123.00</h5>
+              </div>
+              <ol class="rating-list text-center">
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>(99)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <img
+              src="images/laptopimg.png"
+              class="card-img-top w-100"
+              alt="..."
+            />
+            <div class="card-body mx-auto px-2">
+              <h6 class="card-title text-center">Product Name Goes Here</h6>
+              <div class="pricing text-center">
+                <h5 class="card-text">$123.00</h5>
+                &nbsp;
+                <h5 class="card-text margin">$123.00</h5>
+              </div>
+              <ol class="rating-list text-center">
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>(99)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card h-100">
+            <img src="images/cream..png" class="card-img-top w-100" alt="..." />
+            <div class="card-body mx-auto px-2">
+              <h6 class="card-title text-center">Product Name Goes Here</h6>
+              <div class="pricing text-center">
+                <h5 class="card-text">$123.00</h5>
+                &nbsp;
+                <h5 class="card-text margin">$123.00</h5>
+              </div>
+              <ol class="rating-list text-center">
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-solid fa-star fa-fade"
+                    style="color: #ffd333"
+                  ></i>
+                </li>
+                <li>(99)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contents mb-2">
+                <img src="images/group.png" class="card-img-top" alt="..." />
+
+                <div class="text">
+                  <h4>SAVE 20%</h4>
+                  <h3>Special Offer</h3>
+                  <button
+                    class="btn btn-outline-green py-2"
+                    style="color: white"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contents mb-2">
+                <img src="images/group.png" class="card-img-top" alt="..." />
+
+                <div class="text">
+                  <h4>SAVE 20%</h4>
+                  <h3>Special Offer</h3>
+                  <button
+                    class="btn btn-outline-green py-2"
+                    style="color: white"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section mt-5">
+      <div>
+        <h1 class="text-center">RECENT PRODUCTS</h1>
+        <hr class="w-50 mx-auto" />
+        <div class="container-fluid">
+          <div class="row mx-2">
+            <div class="col-md-3 mt-3">
+              <div class="card h-100">
+                <img
+                  src="images/camera.png"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body mx-auto px-2">
+                  <h6 class="card-title text-center">Product Name Goes Here</h6>
+                  <div class="pricing text-center">
+                    <h5 class="card-text">$123.00</h5>
+                    &nbsp;
+                    <h5 class="card-text margin">$123.00</h5>
+                  </div>
+                  <ol class="rating-list text-center">
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>(99)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-3">
+              <div class="card h-100">
+                <img
+                  src="images/decoration.png"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body mx-auto px-2">
+                  <h6 class="card-title text-center">Product Name Goes Here</h6>
+                  <div class="pricing text-center">
+                    <h5 class="card-text">$123.00</h5>
+                    &nbsp;
+                    <h5 class="card-text margin">$123.00</h5>
+                  </div>
+                  <ol class="rating-list text-center">
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>(99)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-3">
+              <div class="card h-100">
+                <img
+                  src="images/shirt.jpeg"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body mx-auto px-2">
+                  <h6 class="card-title text-center">Product Name Goes Here</h6>
+                  <div class="pricing text-center">
+                    <h5 class="card-text">$123.00</h5>
+                    &nbsp;
+                    <h5 class="card-text margin">$123.00</h5>
+                  </div>
+                  <ol class="rating-list text-center">
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>(99)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-3">
+              <div class="card h-100">
+                <img
+                  src="images/drone.jpeg"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body mx-auto px-2">
+                  <h6 class="card-title text-center">Product Name Goes Here</h6>
+                  <div class="pricing text-center">
+                    <h5 class="card-text">$123.00</h5>
+                    &nbsp;
+                    <h5 class="card-text margin">$123.00</h5>
+                  </div>
+                  <ol class="rating-list text-center">
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>(99)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-3">
+              <div class="card h-100">
+                <img
+                  src="images/watch.jpeg"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body mx-auto px-2">
+                  <h6 class="card-title text-center">Product Name Goes Here</h6>
+                  <div class="pricing text-center">
+                    <h5 class="card-text">$123.00</h5>
+                    &nbsp;
+                    <h5 class="card-text margin">$123.00</h5>
+                  </div>
+                  <ol class="rating-list text-center">
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>(99)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-3">
+              <div class="card h-100">
+                <img
+                  src="images/shirt.jpeg"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body mx-auto px-2">
+                  <h6 class="card-title text-center">Product Name Goes Here</h6>
+                  <div class="pricing text-center">
+                    <h5 class="card-text">$123.00</h5>
+                    &nbsp;
+                    <h5 class="card-text margin">$123.00</h5>
+                  </div>
+                  <ol class="rating-list text-center">
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>(99)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-3">
+              <div class="card h-100">
+                <img
+                  src="images/drone.jpeg"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body mx-auto px-2">
+                  <h6 class="card-title text-center">Product Name Goes Here</h6>
+                  <div class="pricing text-center">
+                    <h5 class="card-text">$123.00</h5>
+                    &nbsp;
+                    <h5 class="card-text margin">$123.00</h5>
+                  </div>
+                  <ol class="rating-list text-center">
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>(99)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-3">
+              <div class="card h-100">
+                <img
+                  src="images/decoration.png"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body mx-auto px-2">
+                  <h6 class="card-title text-center">Product Name Goes Here</h6>
+                  <div class="pricing text-center">
+                    <h5 class="card-text">$123.00</h5>
+                    &nbsp;
+                    <h5 class="card-text margin">$123.00</h5>
+                  </div>
+                  <ol class="rating-list text-center">
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-solid fa-star fa-fade"
+                        style="color: #ffd333"
+                      ></i>
+                    </li>
+                    <li>(99)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section mt-5">
+      <div class="row mx-2">
+        <div class="col-md-2 mt-3">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="images/fusion.png" class="w-100" />
+              <h5 class="card-title">FUZION</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Source</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mt-3">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="images/fusion.png" class="w-100" />
+              <h5 class="card-title">TechCom</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Source</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mt-3">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="images/fusion.png" class="w-100" />
+              <h5 class="card-title">AUTOMIZED</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Source</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mt-3">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="images/fusion.png" class="w-100" />
+              <h5 class="card-title">INTERNATIONAL HEART</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Source</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mt-3">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="images/fusion.png" class="w-100" />
+              <h5 class="card-title">WORKAPPLE</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Source</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mt-3">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="images/fusion.png" class="w-100" />
+              <h5 class="card-title">Fuzion</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Source</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer mt-5 mx-2 py-5 px-4">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>GET IN TOUCH</h5>
+          <div class="footer-content py-3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+            <ol style="list-style: none">
+              <li><a class="text-white" href="">123 Street,New York,USA</a></li>
+              <li><a class="text-white" href="">mail@domain.com</a></li>
+              <li><a class="text-white" href="">+906654445</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>QUICK SHOP</h5>
+          <div class="footer-shop py-3">
+            <h6>Home</h6>
+            <h6>Our Shop</h6>
+            <h6>Shop Detail</h6>
+            <h6>Shopping Cart</h6>
+            <h6>Checkout</h6>
+            <h6>Contact Us</h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>MY ACCOUNT</h5>
+          <div class="footer-account py-3">
+            <h6>Home</h6>
+            <h6>Our Shop</h6>
+            <h6>Shop Detail</h6>
+            <h6>Shopping Cart</h6>
+            <h6>Checkout</h6>
+            <h6>Contact Us</h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>NEWSLETTER</h5>
+          <div class="footer-newsletter py-3">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam,
+              rem.
+            </p>
+            <input type="text" placeholder="enter your mail" /><button>
+              SignUp
+            </button>
+            <h6 class="py-2">FOLLOW US</h6>
+            <ol class="" style="list-style: none; display: flex">
+              <li><i class="fa-brands fa-square-twitter fa-beat-fade"></i></li>
+              <li><i class="fa-brands fa-square-facebook fa-beat-fade"></i></li>
+              <li><i class="fa-brands fa-linkedin fa-beat-fade"></i></li>
+              <li>
+                <i class="fa-brands fa-square-instagram fa-beat-fade"></i>
+              </li>
+              <li></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Shopping</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopdetail.html">Shop Detail</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="shopping.html">Shopping Cart</a></li>
+                          <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="whyus.html">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+                <div class="right-side">
+                    <ul class="icons d-flex text-white px-3 my-auto">
+                        <li><i class="fa-solid fa-user"></i></li>
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="section py-5">
+        <div class="px-2 mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table mt-3 text-center">
+                    <thead class="thead-dark">
+                    <tr class="table-data">
+                        <th class="align-middle">Products</th>
+                        <th class="align-middle">Price</th>
+                        <th class="align-middle">Quantity</th>
+                        <th class="align-middle">Total</th>
+                        <th class="align-middle">Remove</th>
+                    </tr>
+                    </thead>
+                    
+                    
+                    <tr  class="table-data">
+                        <td class="align-middle"><img src="images/camera.png" alt="" width="50px">Camera</td>
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle">
+                            <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center my-auto">
+                              <li class="page-item disabled">
+                                <a class="page-link" style="background-color: #ffd333;">-</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" style="background-color: #ffd333;">+</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </td>
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle"><i class="fa-regular fa-circle-xmark fa-beat-fade"></i></td>
+                    </tr>
+                   
+                
+                
+                    <tr class="table-data" style="background-color:#F2F2F2;">
+                        <td class="align-middle"><img src="images/clothing.png" alt="" width="50px">Cloth</td>
+                       
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle">
+                            <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center my-auto">
+                              <li class="page-item disabled">
+                                <a class="page-link" style="background-color: #ffd333;">-</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" style="background-color: #ffd333;">+</a>
+                              </li>
+                            </ul>
+                          </nav></td>
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle"><i class="fa-regular fa-circle-xmark fa-beat-fade"></i></td>
+                    </tr>
+                
+                    <tr class="table-data" style="background-color:#F2F2F2;">
+                        <td class="align-middle"><img src="images/cream..png" alt="" width="50px">Causmatic</td>
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle">
+                            <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center my-auto">
+                              <li class="page-item disabled">
+                                <a class="page-link" style="background-color: #ffd333;">-</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" style="background-color: #ffd333;">+</a>
+                              </li>
+                            </ul>
+                          </nav></td>
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle"><i class="fa-regular fa-circle-xmark fa-beat-fade"></i></td>
+                    </tr>
+                    <tr class="table-data" style="background-color:#F2F2F2;">
+                        <td class="align-middle"><img src="images/shoes.jpeg" alt="" width="50px">Shoes</td>
+                       
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle">
+                            <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center my-auto">
+                              <li class="page-item disabled">
+                                <a class="page-link" style="background-color: #ffd333;">-</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" style="background-color: #ffd333;">+</a>
+                              </li>
+                            </ul>
+                          </nav></td>
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle"><i class="fa-regular fa-circle-xmark fa-beat-fade"></i></td>
+                    </tr>
+        
+                    <tr  class="table-data" style="background-color: #F2F2F2;">
+                        <td class="align-middle"><img src="images/decoration.png" alt="" width="50px">Decorate</td>
+                        
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle">
+                            <div class="my-auto">
+                            <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center my-auto">
+                              <li class="page-item disabled">
+                                <a class="page-link" style="background-color: #ffd333;">-</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" style="background-color: #ffd333;">+</a>
+                              </li>
+                            </ul>
+                          </nav>
+                          </td>
+                        <td class="align-middle">$150</td>
+                        <td class="align-middle"><i class="fa-regular fa-circle-xmark fa-beat-fade"></i></td>
+                    </tr>
+                   </tbody>
+                    </table>
+
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <div class="input-group">
+                    <input type="text" placeholder="Coupon Code" class="form-control" aria-describedby="button-addon2">
+                    <button class="btn btn-success" type="button" id="button-addon2 p-2">Apply Coupon</button>
+                </div>
+
+                  <h3 class="mt-5">CART SUMMARY</h3><hr style="border: 1px dotted black;">
+
+                  <div class="card pt-2">
+                    <div class="card-body">
+                    <div class=" d-flex justify-content-between">
+                      <h6 class="card-title pt-3">Subtotal</h6>
+                      <h6 class="card-subtitle mb-2 text-body-secondary pt-3">$150</h6>
+                    </div>
+                    <div class=" d-flex justify-content-between">
+                        <h6 class="card-title pt-3">Shipping</h6>
+                        <h6 class="card-subtitle mb-2 text-body-secondary pt-3">$10</h6>
+                      </div>
+                      <hr style="border: 1px solid black;">
+                      <div class=" d-flex justify-content-between">
+                        <h6 class="card-titlept-3">Total</h6>
+                        <h6 class="card-subtitle mb-2 text-body-secondary pt-3">$160</h6>
+                      </div>
+                      <div class="pt-3">
+                      <button type="button" class="btn btn-success w-100">Primary button</button>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </div>
+    <div class="footer mt-5 mx-2 py-5 px-4">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>GET IN TOUCH</h5>
+                <div class="footer-content py-3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+
+                    <ol style="list-style: none;">
+                        <li><a class="text-white" href="">123 Street,New York,USA</a></li>
+                        <li><a class="text-white" href="">mail@domain.com</a></li>
+                        <li><a class="text-white" href="">+906654445</a></li>
+                    </ol>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <h5>QUICK SHOP</h5>
+                <div class="footer-shop py-3">
+                    <h6>Home</h6>
+                    <h6>Our Shop</h6>
+                    <h6>Shop Detail</h6>
+                    <h6>Shopping Cart</h6>
+                    <h6>Checkout</h6>
+                    <h6>Contact Us</h6>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <h5>MY ACCOUNT</h5>
+                <div class="footer-account py-3">
+                    <h6>Home</h6>
+                    <h6>Our Shop</h6>
+                    <h6>Shop Detail</h6>
+                    <h6>Shopping Cart</h6>
+                    <h6>Checkout</h6>
+                    <h6>Contact Us</h6>
+
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <h5>NEWSLETTER</h5>
+                <div class="footer-newsletter py-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, rem.</p>
+                    <input type="text" placeholder="enter your mail" /><button>SignUp</button>
+                    <h6 class="py-2">FOLLOW US</h6>
+                    <ol class="" style="list-style: none; display: flex;">
+                        <li><i class="fa-brands fa-square-twitter fa-beat-fade"></i></li>
+                        <li><i class="fa-brands fa-square-facebook fa-beat-fade"></i></li>
+                        <li><i class="fa-brands fa-linkedin fa-beat-fade"></i></li>
+                        <li><i class="fa-brands fa-square-instagram fa-beat-fade"></i></li>
+                        <li></li>
+                    </ol>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    
+</body>
+</html>

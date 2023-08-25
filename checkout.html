@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Checkout Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Shopping</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopdetail.html">Shop Detail</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:black; color:white;">
+                          <li><a class="dropdown-item" href="shopping.html">Shopping Cart</a></li>
+                          <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="whyus.html">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+                <div class="right-side">
+                    <ul class="icons d-flex text-white px-3 my-auto">
+                        <li><i class="fa-solid fa-user"></i></li>
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="section py-5" style="font-size:medium ;">
+      <div class="p-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h4 class="text-center">BILLING ADDRESS</h4>
+                <hr class="w-50 mx-auto">
+                <div class="billing-address w-100 mx-3 px-5">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">First Name</label>
+                          <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Last Name</label>
+                          <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="example@gmail.com">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Mobile No</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="24567896">
+                          </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Home Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Country</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Create an account
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Ship to different address
+                            </label>
+                          </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                      </form>
+
+                </div>
+                
+
+            </div>
+            <div class="col-md-4"> 
+                <h4>ORDER TOTAL</h4>
+                <hr class="w-50">
+                <div class="card" style="width: 18rem;">
+                    <h4>Products</h4>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                           <h6>Product Name 1</h6> 
+                           <h6>$150</h6>
+
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Product Name 1</h6> 
+                            <h6>$150</h6>
+ 
+                         </div>
+                         <div class="d-flex justify-content-between">
+                            <h6>Product Name 1</h6> 
+                            <h6>$150</h6>
+ 
+                         </div>
+                         <hr>
+                         <div class="d-flex justify-content-between">
+                            <h6>Subtotal</h6> 
+                            <h6>$150</h6>
+ 
+                         </div>
+                         <div class="d-flex justify-content-between">
+                            <h6>Shipping</h6> 
+                            <h6>$10</h6>
+ 
+                         </div>
+                         <hr>
+                         <div class="d-flex justify-content-between">
+                            <h6>Total</h6> 
+                            <h6>$160</h6>
+ 
+                         </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="pay">
+                    <h4>PAYMENT</h4>
+                    <hr class="w-50">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Paypal
+                                </label>
+                              </div>
+                              <div class="form-check mt-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Direct Check
+                                </label>
+                              </div>
+                              <div class="form-check mt-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Direct Check
+                                </label>
+                              </div>
+                              <button class="btn btn-success w-100 mt-5">Place Order</button>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </div>
+    <div class="footer mt-5 mx-2 py-5 px-4">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>GET IN TOUCH</h5>
+                <div class="footer-content py-3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    </p>
+
+                    <ol style="list-style: none;">
+                    <li><a class="text-white" href="">123 Street,New York,USA</a></li>
+                    <li><a class="text-white" href="">mail@domain.com</a></li>
+                    <li><a class="text-white" href="">+906654445</a></li>
+                    </ol>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <h5>QUICK SHOP</h5>
+                <div class="footer-shop py-3">
+                <h6>Home</h6>
+                <h6>Our Shop</h6>
+                <h6>Shop Detail</h6>
+                <h6>Shopping Cart</h6>
+                <h6>Checkout</h6>
+                <h6>Contact Us</h6>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <h5>MY ACCOUNT</h5>
+                <div class="footer-account py-3">
+                    <h6>Home</h6>
+                    <h6>Our Shop</h6>
+                    <h6>Shop Detail</h6>
+                    <h6>Shopping Cart</h6>
+                    <h6>Checkout</h6>
+                    <h6>Contact Us</h6>
+                    
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <h5>NEWSLETTER</h5>
+                <div class="footer-newsletter py-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, rem.</p>
+                    <input type="text" placeholder="enter your mail"/><button>SignUp</button>
+                    <h6 class="py-2">FOLLOW US</h6>
+                    <ol class="" style="list-style: none; display: flex;">
+                        <li><i class="fa-brands fa-square-twitter fa-beat-fade"></i></li>
+                        <li><i class="fa-brands fa-square-facebook fa-beat-fade"></i></li>
+                        <li><i class="fa-brands fa-linkedin fa-beat-fade"></i></li>
+                        <li><i class="fa-brands fa-square-instagram fa-beat-fade"></i></li>
+                        <li></li>
+                    </ol>
+
+                </div>
+
+            </div>
+            <hr style="border:2px solid white;">
+
+        <div class="bottom-footer">
+         <p style="text-align: center;">© Domain. All Rights Reserved. Designed by HTML Codex</p>
+        </div>
+            
+
+        </div>
+    
+</body>
+</html>
